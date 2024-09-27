@@ -1,11 +1,11 @@
 # Sentiment Analysis on Reddit data for Riot Gaming's Valorant New Update
 
-<img src="https://github.com/mihir2312/Social-Media-Analytics/blob/main/images/CLOVE_Light_Holo_2b.png" width="1000">
+<img src="https://github.com/mihir2312/Sentiment-Analysis/blob/main/images/CLOVE_Light_Holo_2b.png" width="1000">
 
 Conducted sentiment analysis using BERT and Llama 2, alongside LDA-based topic modeling, on Riot Gaming’s _Valorant_ subreddit data to evaluate player reactions to game updates. Utilized the Google BERT model and Llama 2 via LangChain for sentiment classification, and leveraged PRAW for data extraction. Applied LDA Topic Modeling to identify key themes within positive and negative sentiment labels, aiming to enhance player satisfaction and retention strategies.
 
 
-## [Data Mining Code](https://github.com/mihir2312/Social-Media-Analytics/blob/main/PRAW%20(Python%20Reddit%20API%20Wrapper)%20Code.ipynb)
+## [Data Mining Code](https://github.com/mihir2312/Sentiment-Analysis/blob/main/PRAW%20(Python%20Reddit%20API%20Wrapper)%20Code.ipynb)
 Used the PRAW (Python Reddit API Wrapper) library to collect Reddit's user comments from the following subreddits:
 - r/Valorant
 - r/ValorantCompetitive
@@ -13,7 +13,7 @@ Used the PRAW (Python Reddit API Wrapper) library to collect Reddit's user comme
 - r/ValorantClips
 - r/Eggwick
 
-### [Text Preprocessing in NLP with Python codes](https://github.com/mihir2312/Social-Media-Analytics/blob/main/text_preprocessing.ipynb)
+### [Text Preprocessing in NLP with Python codes](https://github.com/mihir2312/Sentiment-Analysis/blob/main/text_preprocessing.ipynb)
 The preprocessing phase involved:
 - Lowercasing text
 - Tokenization
@@ -23,13 +23,13 @@ The preprocessing phase involved:
 ## Sentiment Analysis
 I employed Google BERT and Llama 2 models to conduct sentiment analysis on the preprocessed data.
 
-### [BERT Model](https://github.com/mihir2312/Social-Media-Analytics/blob/main/sentiment%20Analysis%20using%20Google%20BERT.ipynb)
+### [BERT Model](https://github.com/mihir2312/Sentiment-Analysis/blob/main/sentiment%20Analysis%20using%20Google%20BERT.ipynb)
 - **Training Data:** IMDB Dataset
 - **Challenges**:\
     ***1. Longer Execution Time:*** Training the BERT model and obtaining predictions was time-consuming.\
     ***2. Context Mismatch:*** Despite using the IMDB dataset for training, we observed some incorrect sentiment predictions during manual checks, likely due to contextual differences between movie reviews and gaming discussions.
 
-### [Llama 2 Model](https://github.com/mihir2312/Social-Media-Analytics/blob/main/sentiment%20Analysis%20using%20Llama2%20via%20LangChain.ipynb)
+### [Llama 2 Model](https://github.com/mihir2312/Sentiment-Analysis/blob/main/sentiment%20Analysis%20using%20Llama2%20via%20LangChain.ipynb)
 To overcome the above challenges, we shifted to the open-source Llama 2 model. Initially, we attempted to implement it on Google Colab, but faced issues such as the need for multiple dependencies and the requirement for a Colab Pro subscription due to high CPU utilization.
 
 Utilized Ollama to locally pull and run the Llama 2 model. However, I encountered difficulties in processing CSV files directly with Llama 2 for sentiment analysis. To resolve this, I employed ***LangChain***, a framework designed to interact with large language models (LLMs). This setup allowed me to feed data from a CSV file row by row into Llama 2 and store the sentiment predictions back into the CSV file.
@@ -37,21 +37,21 @@ Utilized Ollama to locally pull and run the Llama 2 model. However, I encountere
 
 ## Sentiment Comparison
 
-### [Google BERT Results](https://github.com/mihir2312/Social-Media-Analytics/blob/main/Sentiment%20Analysis%20%2BVe%20percent_BERT.ipynb)
+### [Google BERT Results](https://github.com/mihir2312/Sentiment-Analysis/blob/main/Sentiment%20Analysis%20%2BVe%20percent_BERT.ipynb)
 
-<img src="https://github.com/mihir2312/Social-Media-Analytics/blob/main/images/positive%20percentage%20comparison%20before%20and%20after%20release%20using%20BERT.jpeg" width="600">
+<img src="https://github.com/mihir2312/Sentiment-Analysis/blob/main/images/positive%20percentage%20comparison%20before%20and%20after%20release%20using%20BERT.jpeg" width="600">
 
 
 
-### [Llama 2 Results](https://github.com/mihir2312/Social-Media-Analytics/blob/main/Sentiment%20Analysis%20%2BVe%20percent_LLM.ipynb)
+### [Llama 2 Results](https://github.com/mihir2312/Sentiment-Analysis/blob/main/Sentiment%20Analysis%20%2BVe%20percent_LLM.ipynb)
 
-<img src="https://github.com/mihir2312/Social-Media-Analytics/blob/main/images/positive%20percentage%20comparison%20before%20and%20after%20release%20using%20Llama2.jpeg" width="600">
+<img src="https://github.com/mihir2312/Sentiment-Analysis/blob/main/images/positive%20percentage%20comparison%20before%20and%20after%20release%20using%20Llama2.jpeg" width="600">
 
 ## Results 
 
 Drop in positive sentiments post-Clove release, evident in both BERT and Llama 2 analyses, **implies a mismatch between player expectations and experiences**. Identifying and addressing factors contributing to this drop is crucial for refining Clove's design and enhancing player satisfaction. Continuous feedback monitoring is essential for adapting game elements to better align with player expectations.
 
-### [Latent Dirichlet allocation Topic Modeling](https://github.com/mihir2312/Social-Media-Analytics/blob/main/Latent%20Dirichlet%20allocation%20Topic%20Modeling.ipynb)
+### [Latent Dirichlet allocation Topic Modeling](https://github.com/mihir2312/Sentiment-Analysis/blob/main/Latent%20Dirichlet%20allocation%20Topic%20Modeling.ipynb)
 
 I used Latent Dirichlet Allocation (LDA) to identify topics within different sentiment groups (positive and negative) before and after Clove's release.
 
@@ -103,4 +103,4 @@ I used Latent Dirichlet Allocation (LDA) to identify topics within different sen
 The analysis provided valuable insights into player sentiments and discussions surrounding the new agent Clove, which can help Riot Games improve player satisfaction and retention strategies. The consistent themes and evolving discussions indicate areas for future focus and enhancement.
 
 
-## [View Full Presentation](https://github.com/mihir2312/Social-Media-Analytics/blob/main/Team2_Valorant.pdf)
+## [View Full Presentation](https://github.com/mihir2312/Sentiment-Analysis/blob/main/Team2_Valorant.pdf)
