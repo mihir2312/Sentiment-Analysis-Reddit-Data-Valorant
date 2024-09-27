@@ -1,4 +1,4 @@
-# Social Media Analytics
+# Sentiment Analysis on Reddit data for Riot Gaming's Valorant New Update
 
 <img src="https://github.com/mihir2312/Social-Media-Analytics/blob/main/images/CLOVE_Light_Holo_2b.png" width="1000">
 
