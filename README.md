@@ -103,4 +103,6 @@ I used Latent Dirichlet Allocation (LDA) to identify topics within different sen
 The analysis provided valuable insights into player sentiments and discussions surrounding the new agent Clove, which can help Riot Games improve player satisfaction and retention strategies. The consistent themes and evolving discussions indicate areas for future focus and enhancement.
 
 
+<img src="https://github.com/mihir2312/Sentiment-Analysis/blob/main/images/Screenshot 2024-10-22 174736.jpg" width="1000">
+
 ## [View Full Presentation](https://github.com/mihir2312/Sentiment-Analysis/blob/main/Team2_Valorant.pdf)
