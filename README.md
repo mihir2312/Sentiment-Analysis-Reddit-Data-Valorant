@@ -1,4 +1,4 @@
-# Sentiment Analysis on Reddit data for Riot Gaming's Valorant New Update
+# Sentiment Analysis on Reddit data for Riot Gaming - Valorant's New Update
 
 <img src="https://github.com/mihir2312/Sentiment-Analysis/blob/main/images/CLOVE_Light_Holo_2b.png" width="1000">
 
